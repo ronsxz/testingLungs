@@ -1,0 +1,80 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* --- Header Layout --- */
+.main-header {
+    display: flex;
+    justify-content: space-between; /* Logo on left, wrapper on right */
+    align-items: center;
+    padding: 0 20px; 
+    background-color:  #111; 
+    height: 60px; /* Fixed height stops it from getting too tall */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.logo {
+    height: 70px; /* Adjusted size to look professional */
+    width: auto;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    object-fit: contain;
+}
+
+/* This wrapper pulls the links and icons into one line */
+.main-nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between the menu and the icons */
+    margin-left: auto;
+}
+
+.main-nav {
+    display: flex;
+    gap: 25px; /* Space between individual text links */
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+.icon-links {
+    display: flex;
+    gap: 20px; /* Space between search, user, cart icons */
+}
+
+.icon-links a {
+    color: gray;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.icon-links a:hover {
+    opacity: 0.6;
+}
+
+footer {
+    width: 96%;
+    background-color: #111;
+    color: #888;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.8rem;  
+    z-index: 1000; 
+    bottom: 0;
+}   
